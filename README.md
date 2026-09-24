@@ -35,7 +35,7 @@ All inference runs **on-device**. No image or text ever leaves your machine.
 ## Install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ocr-qvac.git
+git clone https://github.com/nishamalla22/Component-Alternative-Finder.git
 cd ocr-qvac
 npm install
 ```
