@@ -1,0 +1,14 @@
+{
+  "name": "ocr-qvac",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@qvac/sdk": "^0.20.0",
+    "express": "^5.2.1",
+    "fuse.js": "^7.5.0",
+    "multer": "^2.4.0"
+  }
+}

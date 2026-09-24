@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OCR + QVAC — Component Finder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <header>
+    <div class="logo">
+      <span class="logo-icon">⚡</span>
+      <h1>OCR <span class="plus">+</span> QVAC</h1>
+    </div>
+    <p class="tagline">Point. Snap. Identify. <span class="highlight">On-device AI.</span></p>
+    <div class="badges">
+      <span class="badge">🔒 100% Offline</span>
+      <span class="badge">⚡ No API Keys</span>
+      <span class="badge">🧠 QVAC SDK v0.20</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="uploader">
+      <label for="file" class="drop-zone" id="dropZone">
+        <div class="drop-content" id="dropText">
+          <div class="drop-icon">📷</div>
+          <div class="drop-title">Drop component image here</div>
+          <div class="drop-hint">or click to browse &nbsp;·&nbsp; paste from clipboard</div>
+        </div>
+        <img id="preview" hidden />
+      </label>
+      <input type="file" id="file" accept="image/*" hidden />
+      <button id="scanBtn" disabled>
+        <span class="btn-icon">🔍</span>
+        <span>Scan & Find Alternatives</span>
+      </button>
+      <div id="status" class="status"></div>
+    </section>
+
+    <section id="results" hidden>
+      <div class="card ocr-card">
+        <div class="card-header">
+          <div class="card-title">
+            <span class="dot dot-blue"></span>
+            OCR Output
+          </div>
+          <button class="copy-btn" id="copyOcr" title="Copy text">Copy</button>
+        </div>
+        <pre id="ocrText" class="ocr-output"></pre>
+      </div>
+      <div id="matches" class="matches"></div>
+    </section>
+
+    <section class="manual">
+      <div class="manual-header">
+        <h3>Or search manually</h3>
+        <span class="hint">Type a part number like NE555</span>
+      </div>
+      <div class="search-wrap">
+        <span class="search-icon">🔎</span>
+        <input id="manualInput" placeholder="Search component database..." autocomplete="off" />
+      </div>
+      <div id="manualResults"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Powered by QVAC on-device AI</span>
+    <span>·</span>
+    <span>Built for local electronics makers</span>
+  </footer>
+
+<script src="app.js"></script>
+</body>
+</html>

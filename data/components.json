@@ -1,0 +1,178 @@
+[
+  {
+    "part": "IRFZ44",
+    "type": "N-Channel Power MOSFET",
+    "specs": "TO-220, 55V, 49A, 0.028Ω RDS(on)",
+    "description": "N-channel enhancement mode power MOSFET commonly used for switching high-current loads. Popular in motor drivers, inverters, and PWM circuits.",
+    "alternatives": [
+      {"name": "IRFZ44N", "brand": "Infineon", "source": "local", "price": "₹40", "note": "Exact upgrade, lower RDS(on), pin-compatible"},
+      {"name": "IRLZ44N", "brand": "Infineon", "source": "local", "price": "₹50", "note": "Logic-level gate — works with 3.3V/5V MCUs directly"},
+      {"name": "IRF540N", "brand": "Vishay", "source": "local", "price": "₹35", "note": "100V rating, 33A — higher voltage, lower current"},
+      {"name": "IRF3205", "brand": "Infineon", "source": "local", "price": "₹55", "note": "110A, very low RDS(on) — for heavy loads"}
+    ]
+  },
+  {
+    "part": "IRF540",
+    "type": "N-Channel Power MOSFET",
+    "specs": "TO-220, 100V, 33A, 0.044Ω RDS(on)",
+    "description": "Higher voltage N-channel MOSFET suitable for switching applications up to 100V.",
+    "alternatives": [
+      {"name": "IRF540N", "brand": "Vishay", "source": "local", "price": "₹35", "note": "Improved version, lower RDS(on)"},
+      {"name": "IRFZ44N", "brand": "Infineon", "source": "local", "price": "₹40", "note": "55V rating, higher current"},
+      {"name": "IRLZ44N", "brand": "Infineon", "source": "local", "price": "₹50", "note": "Logic-level gate"}
+    ]
+  },
+  {
+    "part": "NE555",
+    "type": "Precision Timer IC",
+    "specs": "DIP-8, 4.5V–16V, 200mA output",
+    "description": "Classic timer IC for astable and monostable multivibrator circuits. Used for PWM, oscillators, and delays.",
+    "alternatives": [
+      {"name": "LM555", "brand": "Texas Instruments", "source": "local", "price": "₹15", "note": "Direct replacement, better accuracy"},
+      {"name": "ICM7555", "brand": "Intersil", "source": "local", "price": "₹25", "note": "CMOS version, lower power, wider voltage"},
+      {"name": "TLC555", "brand": "Texas Instruments", "source": "local", "price": "₹20", "note": "CMOS, low power, high frequency"}
+    ]
+  },
+  {
+    "part": "LM358",
+    "type": "Dual Operational Amplifier",
+    "specs": "DIP-8, 3V–32V, low-power",
+    "description": "Dual op-amp designed for single-supply operation. Common in sensor signal conditioning.",
+    "alternatives": [
+      {"name": "LM2904", "brand": "Texas Instruments", "source": "local", "price": "₹12", "note": "Automotive grade equivalent"},
+      {"name": "NE5532", "brand": "Philips", "source": "local", "price": "₹40", "note": "Low-noise audio-grade op-amp"},
+      {"name": "TL072", "brand": "Texas Instruments", "source": "local", "price": "₹20", "note": "JFET input, low noise"}
+    ]
+  },
+  {
+    "part": "LM7805",
+    "type": "Fixed Linear Voltage Regulator",
+    "specs": "TO-220, 5V output, 1.5A max",
+    "description": "Fixed 5V positive linear regulator. Very common in power supply circuits.",
+    "alternatives": [
+      {"name": "LM340", "brand": "Texas Instruments", "source": "local", "price": "₹10", "note": "Same 5V fixed regulator"},
+      {"name": "MC7805", "brand": "OnSemi", "source": "local", "price": "₹8", "note": "Direct equivalent"},
+      {"name": "L7805", "brand": "STMicro", "source": "local", "price": "₹10", "note": "Direct equivalent"}
+    ]
+  },
+  {
+    "part": "ATMEGA328P",
+    "type": "8-bit AVR Microcontroller",
+    "specs": "DIP-28, 32KB flash, 2KB SRAM, 20MHz",
+    "description": "The MCU used in Arduino Uno. 8-bit RISC, ideal for embedded projects.",
+    "alternatives": [
+      {"name": "ATMEGA328", "brand": "Microchip", "source": "local", "price": "₹180", "note": "Non-P version, slightly lower spec"},
+      {"name": "ATMEGA88", "brand": "Microchip", "source": "local", "price": "₹120", "note": "8KB flash, pin-compatible"},
+      {"name": "ATMEGA168", "brand": "Microchip", "source": "local", "price": "₹150", "note": "16KB flash, pin-compatible"}
+    ]
+  },
+  {
+    "part": "1N4007",
+    "type": "General Purpose Rectifier Diode",
+    "specs": "DO-41, 1000V, 1A",
+    "description": "Standard 1A rectifier diode. Used in power supplies, reverse polarity protection.",
+    "alternatives": [
+      {"name": "1N4004", "brand": "Vishay", "source": "local", "price": "₹2", "note": "400V rating — check your voltage"},
+      {"name": "1N4148", "brand": "Vishay", "source": "local", "price": "₹1", "note": "Signal diode, low current only"},
+      {"name": "1N5408", "brand": "Vishay", "source": "local", "price": "₹5", "note": "3A version, higher current"}
+    ]
+  },
+  {
+    "part": "BC547",
+    "type": "NPN Bipolar Transistor",
+    "specs": "TO-92, 45V, 100mA, hFE 110–800",
+    "description": "General-purpose NPN transistor for small-signal amplification and switching.",
+    "alternatives": [
+      {"name": "2N3904", "brand": "OnSemi", "source": "local", "price": "₹3", "note": "Popular US equivalent"},
+      {"name": "BC548", "brand": "Philips", "source": "local", "price": "₹3", "note": "Higher gain version"},
+      {"name": "BC549", "brand": "Philips", "source": "local", "price": "₹4", "note": "Low-noise variant"}
+    ]
+  },
+  {
+    "part": "BC557",
+    "type": "PNP Bipolar Transistor",
+    "specs": "TO-92, -45V, -100mA",
+    "description": "PNP complement to BC547. Used in push-pull and current mirror circuits.",
+    "alternatives": [
+      {"name": "2N3906", "brand": "OnSemi", "source": "local", "price": "₹3", "note": "PNP complement to 2N3904"},
+      {"name": "BC558", "brand": "Philips", "source": "local", "price": "₹3", "note": "Higher gain variant"}
+    ]
+  },
+  {
+    "part": "ESP8266",
+    "type": "Wi-Fi SoC Module",
+    "specs": "3.3V, 80MHz, 4MB flash",
+    "description": "Low-cost Wi-Fi microcontroller. Popular for IoT projects.",
+    "alternatives": [
+      {"name": "ESP-01", "brand": "Espressif", "source": "local", "price": "₹120", "note": "Minimal breakout, 2 GPIO"},
+      {"name": "ESP-12E", "brand": "Espressif", "source": "local", "price": "₹180", "note": "More GPIO, easier to flash"},
+      {"name": "ESP32", "brand": "Espressif", "source": "local", "price": "₹280", "note": "Dual-core, BT, faster — upgrade path"}
+    ]
+  },
+  {
+    "part": "ESP32",
+    "type": "Wi-Fi + Bluetooth SoC",
+    "specs": "3.3V, dual-core 240MHz, 520KB SRAM",
+    "description": "Powerful Wi-Fi + BT microcontroller. Successor to ESP8266.",
+    "alternatives": [
+      {"name": "ESP32-WROOM-32", "brand": "Espressif", "source": "local", "price": "₹280", "note": "Standard module"},
+      {"name": "ESP32-S3", "brand": "Espressif", "source": "local", "price": "₹350", "note": "Newer, USB-OTG, AI acceleration"},
+      {"name": "ESP32-C3", "brand": "Espressif", "source": "local", "price": "₹250", "note": "RISC-V core, lower cost"}
+    ]
+  },
+  {
+    "part": "LM317",
+    "type": "Adjustable Linear Voltage Regulator",
+    "specs": "TO-220, 1.25V–37V, 1.5A",
+    "description": "Adjustable positive voltage regulator. Set output with two resistors.",
+    "alternatives": [
+      {"name": "LM317T", "brand": "STMicro", "source": "local", "price": "₹15", "note": "Standard TO-220 package"},
+      {"name": "LM117", "brand": "Texas Instruments", "source": "local", "price": "₹25", "note": "Military-temp version"},
+      {"name": "LM338", "brand": "Texas Instruments", "source": "local", "price": "₹60", "note": "5A version, higher current"}
+    ]
+  },
+  {
+    "part": "TL072",
+    "type": "Dual JFET-Input Op-Amp",
+    "specs": "DIP-8, low-noise, high input impedance",
+    "description": "Low-noise JFET op-amp ideal for audio and instrumentation.",
+    "alternatives": [
+      {"name": "TL082", "brand": "Texas Instruments", "source": "local", "price": "₹20", "note": "Similar, less strict spec"},
+      {"name": "LF353", "brand": "Texas Instruments", "source": "local", "price": "₹25", "note": "JFET input, wide bandwidth"},
+      {"name": "NE5532", "brand": "Philips", "source": "local", "price": "₹40", "note": "Bipolar, very low noise"}
+    ]
+  },
+  {
+    "part": "ULN2003",
+    "type": "Darlington Transistor Array",
+    "specs": "DIP-16, 7 channels, 500mA/ch",
+    "description": "7-channel Darlington array with built-in flyback diodes. Drives relays, steppers, LEDs.",
+    "alternatives": [
+      {"name": "ULN2004", "brand": "Texas Instruments", "source": "local", "price": "₹20", "note": "Higher input voltage variant"},
+      {"name": "ULN2803", "brand": "Texas Instruments", "source": "local", "price": "₹30", "note": "8-channel version"},
+      {"name": "ULN2003A", "brand": "STMicro", "source": "local", "price": "₹18", "note": "Same spec, different vendor"}
+    ]
+  },
+  {
+    "part": "PC817",
+    "type": "Optocoupler",
+    "specs": "DIP-4, 5kV isolation, CTR 50–600%",
+    "description": "General-purpose phototransistor optocoupler for signal isolation.",
+    "alternatives": [
+      {"name": "4N35", "brand": "Vishay", "source": "local", "price": "₹10", "note": "Direct equivalent"},
+      {"name": "EL817", "brand": "Everlight", "source": "local", "price": "₹8", "note": "Cheaper equivalent"},
+      {"name": "LTV-817", "brand": "Lite-On", "source": "local", "price": "₹8", "note": "Direct equivalent"}
+    ]
+  },
+  {
+    "part": "2N2222",
+    "type": "NPN Bipolar Transistor",
+    "specs": "TO-92, 40V, 800mA, hFE 100–300",
+    "description": "General-purpose NPN transistor for switching and amplification.",
+    "alternatives": [
+      {"name": "PN2222", "brand": "OnSemi", "source": "local", "price": "₹3", "note": "Plastic TO-92 package"},
+      {"name": "2N3904", "brand": "OnSemi", "source": "local", "price": "₹3", "note": "Lower current, higher gain"},
+      {"name": "BC547", "brand": "Philips", "source": "local", "price": "₹3", "note": "European equivalent"}
+    ]
+  }
+]
